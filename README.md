@@ -3,7 +3,7 @@ HA-Popover is a super handy and easy to use popover with nice transition for you
 
 
 # Installation
-Just download the JS and CSS file and include in your HTML webpage
+Just download the files and and include JS and CSS files in your HTML webpage
 
 
 # How to use
