@@ -1,4 +1,4 @@
-# ha-popover
+# HA-Popover
 HA-Popover is a super handy and easy to use popover with nice transition for your website! simple, clean and cross-browser tutorial maker popover!
 
 
@@ -55,3 +55,53 @@ Just download the JS and CSS file and include in your HTML webpage
     popover.showPopover();
   ```
 
+
+#Features
+###Placement:
+Use *data-placement* attribute to place the popover left | right | top | bottom
+  ```
+  ...
+  <div class="ha-popover" id="mySamplePopover" data-placement="right" data-anchor="#someDiv">
+    ...
+  </div>
+  ```
+  
+###Tutorial Maker:
+Put multiple popovers in your webpage for introducing your website. Then use *data-next* attribute to show next popover automatically
+
+```
+<body>
+  ...
+  <div id="someDiv"></div>
+  ...
+  <div class="ha-popover" id="mySamplePopover" data-placement="top" data-anchor="#someDiv">
+     <span class="close-btn" data-close="#mySamplePopover">
+     </span>
+     <div class="ha-popover-header">
+       ...
+     </div>
+     <div class="ha-popover-body">
+       ...
+     </div>
+     <div class="ha-popover-footer">
+       <button data-next="#myAnotherPopover">Next Tip!</button>
+     </div>
+  </div>
+    ...
+  <div id="anotherDiv"></div>
+  ...
+  <div class="ha-popover" id="myAnotherPopover" data-placement="top" data-anchor="#anotherDiv">
+     <span class="close-btn" data-close="#myAnotherPopover">
+     </span>
+     <div class="ha-popover-header">
+       ...
+     </div>
+     <div class="ha-popover-body">
+       ...
+     </div>
+     <div class="ha-popover-footer">
+       ...
+     </div>
+  </div>
+</body>
+```
