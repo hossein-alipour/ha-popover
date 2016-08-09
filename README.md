@@ -1,6 +1,7 @@
 # HA-Popover
 HA-Popover is a super handy and easy to use popover with nice transition for your website! simple, clean and cross-browser tutorial maker popover!
 
+###View [Demo Page](http://demos.hosseinalipour.ir/ha-popover)
 
 # Installation
 Just download the files and and include JS and CSS files in your HTML webpage
@@ -16,7 +17,7 @@ Just download the files and and include JS and CSS files in your HTML webpage
   <div id="someDiv"></div>
   ...
   <div class="ha-popover" id="mySamplePopover" data-placement="top" data-anchor="#someDiv">
-     <span class="close-btn" data-close="#mySamplePopover">
+     <span class="close-btn" data-closepopover="#mySamplePopover">
      </span>
      <div class="ha-popover-header">
        ...
@@ -41,7 +42,6 @@ Just download the files and and include JS and CSS files in your HTML webpage
   
   
   - Show using autoshow feature:
-  
   ```
   ...
   <div class="ha-popover" id="mySamplePopover" data-placement="top" data-anchor="#someDiv" data-autoshow="true" data-autoshowdelay="3000">
@@ -116,3 +116,6 @@ Put multiple popovers in your webpage for introducing your website. Then use *da
   </div>
 </body>
 ```
+
+***
+Copyright © 2016 by [Hossein Alipour](http://hosseinalipour.ir)
