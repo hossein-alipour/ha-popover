@@ -55,7 +55,18 @@ Just download the files and and include JS and CSS files in your HTML webpage
     popover.showPopover();
   ```
 
+#3 - Hide the popover in these ways
 
+  - Hide using HTML attribute:
+  ```
+  <button data-closepopver="#mySamplePopover">Hide Popover</button>
+  ```
+  - Hide using JavaScript:
+  ```javascript
+    var popover = new HaPopOver("#mySamplePopover");
+    popover.closePopover();
+  ```
+  
 #Features
 ###Placement:
 Use *data-placement* attribute to place the popover left | right | top | bottom
