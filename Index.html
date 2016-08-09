@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HA-PopOver Sample Page</title>
+    <meta charset="UTF-8">
+    <meta description="HA-Popover is a super handy and easy to use popover with nice transition for your website! simple, clean and cross-browser tutorial maker popover!">
+    <meta keywords="popover,html component,tutorial maker,hossein alipour,ha-popover,dialog box,popup,html,css,js,javascript">
+    <link href="style.css" rel="stylesheet">
+    <link href="src/ha-popover.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <ul id="main-nav">
+                <li> <a href="#">home</a> </li>
+                <li> <a href="#">works</a> </li>
+                <li> <a href="#">about</a> </li>
+            </ul>
+            <ul class="nav-right">
+                <li> <a href="#">dashboard</a> </li>
+                <li> <a href="#">profile</a> </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <header class="website-header">
+            <h1 class="slogan">Welcome to HA-PopOver Usage Sample Page</h1>
+            <a class="download-link" href="https://github.com/hossein-alipour/ha-popover">Download HA-PopOver</a>
+        </header>
+        <div class="title-container">
+            <h2>Latest Posts</h2>
+        </div>
+        <div>
+            <article>
+                <header>
+                    <h1>
+                        An Article Title
+                    </h1>
+                </header>
+                <div class="article-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu
+                    </p>
+                </div>
+                <footer>
+                    <a href="#">read more</a>
+                    <div class="clearfix"></div>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h1>
+                        Another Article Title
+                    </h1>
+                </header>
+                <div class="article-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu
+                    </p>
+                </div>
+                <footer>
+                    <a href="#">read more</a>
+                    <div class="clearfix"></div>
+                </footer>
+            </article>
+        </div>
+        <br/>
+        <br/>
+        <button type="button" onclick="restartTutorial()" class="restart-btn">Restart Tutorial</button>
+        <br/>
+        <br/>
+        <footer>
+            <hr style="opacity:.3" /> Copyright © 2016 by <a href="http://hosseinalipour.ir">Hossein Alipour</a>
+        </footer>
+    </div>
+    <div class="ha-popover" id="firstPopover" data-placement="bottom" data-anchor="#main-nav" data-autoshow="true" data-autoshowdelay="500">
+        <span class="close-btn" data-closepopover="#firstPopover">
+        </span>
+        <div class="ha-popover-header">
+            <h3 class="text-center">Sample Tutorial</h3>
+        </div>
+        <hr style="opacity: .3" />
+        <div class="ha-popover-body">
+            <p>
+                Hello! Here you can find some amazing stuff! Let's look at some features
+            </p>
+        </div>
+        <div class="ha-popover-footer">
+            <div class="ha-popover-btn" data-closepopover="#firstPopover">No Thanks!</div>
+            <div class="ha-popover-btn" data-closepopover="#firstPopover" data-nextpopover="#secondPopover">Start!</div>
+        </div>
+    </div>
+    <div class="ha-popover" id="secondPopover" data-placement="bottom" data-anchor=".nav-right">
+        <span class="close-btn" data-closepopover="#secondPopover">
+        </span>
+        <div class="ha-popover-header">
+            <h3 class="text-center">First Tip!</h3>
+        </div>
+        <hr style="opacity: .3" />
+        <div class="ha-popover-body">
+            <p>
+                You can go to your dashboard or profile page via these links
+            </p>
+        </div>
+        <div class="ha-popover-footer">
+            <div class="ha-popover-btn" data-closepopover="#secondPopover">Finish!</div>
+            <div class="ha-popover-btn" data-closepopover="#secondPopover" data-nextpopover="#thirdPopover">Next Tip!</div>
+        </div>
+    </div>
+    <div class="ha-popover" id="thirdPopover" data-placement="right" data-anchor="h2">
+        <span class="close-btn" data-closepopover="#thirdPopover">
+        </span>
+        <div class="ha-popover-header">
+            <h3 class="text-center">Third Tip!</h3>
+        </div>
+        <hr style="opacity: .3" />
+        <div class="ha-popover-body">
+            <p>
+                Here you can read latest articles from blog
+            </p>
+        </div>
+        <div class="ha-popover-footer">
+            <div class="ha-popover-btn" data-closepopover="#thirdPopover">Finish!</div>
+            <div class="ha-popover-btn" data-closepopover="#thirdPopover" data-nextpopover="#fourthPopover">Next Tip!</div>
+        </div>
+    </div>
+    <div class="ha-popover" id="fourthPopover" data-placement="top" data-anchor="article:first-child footer a">
+        <span class="close-btn" data-closepopover="#fourthPopover">
+        </span>
+        <div class="ha-popover-header">
+            <h3 class="text-center">Last Tip!</h3>
+        </div>
+        <hr style="opacity: .3" />
+        <div class="ha-popover-body">
+            <p>
+                Click this button to read full article and if you want this cool popover in your website, download it from <a href="https://github.com/hossein-alipour/ha-popover">here</a>
+            </p>
+        </div>
+        <div class="ha-popover-footer">
+            <div class="ha-popover-btn" data-closepopover="#fourthPopover">Finish!</div>
+        </div>
+    </div>
+    <script src="src/ha-popover.min.js"></script>
+    <script>
+        var allPopovers = new HaPopOver(".ha-popover");
+        var popover = new HaPopOver("#firstPopover");
+
+        function restartTutorial() {
+            allPopovers.closePopover();
+            popover.showPopover();
+        }
+    </script>
+</body>
+
+</html>

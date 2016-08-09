@@ -1,0 +1,153 @@
+﻿@font-face {
+    font-family: 'SEGOEUIL';
+    src: url('Content/Fonts/SEGOEUIL.eot');
+    src: local('SEGOEUIL'), url('Content/Fonts/SegoeUI-Light.woff') format('woff'), url('Content/Fonts/SegoeUI-Light.ttf') format('truetype');
+}
+
+body {
+    font-family: "SEGOEUIL", Verdana, Geneva, Tahoma, sans-serif;
+    color: #787878;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.sample-div {
+    display: table;
+    border: solid 1px #778899;
+    text-align: center;
+    margin: auto;
+}
+
+.btn.btn-show-ha-popover {
+    padding: 8px 10px;
+    background-color: #333333;
+    color: #ebebeb;
+    cursor: pointer;
+    display: table;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.btn.btn-show-ha-popover:hover {
+    background-color: #00bfff;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+nav {
+    height: 50px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul.nav-right {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+header.website-header{
+    background-color: #fbfbfb;
+    margin-bottom: 40px;
+    padding: 100px;
+}
+
+.slogan{
+    text-align: center;
+}
+
+.download-link{
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    display: table;
+    font-weight: bold;
+}
+
+.title-container{
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+h2{
+    display: inline-block;
+}
+
+article {
+    margin-right: 10px;
+    margin-left: 0;
+    border: 1px solid #ebebeb;
+    width: 470px;
+    display: inline-block;
+}
+
+article:nth-child(2n){
+    margin-right: 0;
+}
+
+article header,
+article .article-body,
+article footer {
+    padding: 10px;
+    height: auto;
+}
+.clearfix {
+    clear: both;
+    float: none;
+}
+article footer a{
+    text-decoration: none;
+    float: right;
+    padding: 5px 8px;
+    background-color: #333333;
+    border-radius: 3px;
+    color:#ebebeb;
+}
+article footer a:hover{
+    background-color: #00bfff;
+}
+
+.restart-btn{
+    outline: none;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    color:#333;
+    display: table;
+    margin: auto; 
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+.restart-btn:hover{
+    background-color: #00bfff;
+    color:#ebebeb;
+}
