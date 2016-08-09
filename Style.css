@@ -1,11 +1,4 @@
-﻿@font-face {
-    font-family: 'SEGOEUIL';
-    src: url('Content/Fonts/SEGOEUIL.eot');
-    src: local('SEGOEUIL'), url('Content/Fonts/SegoeUI-Light.woff') format('woff'), url('Content/Fonts/SegoeUI-Light.ttf') format('truetype');
-}
-
-body {
-    font-family: "SEGOEUIL", Verdana, Geneva, Tahoma, sans-serif;
+﻿body {
     color: #787878;
     padding: 0;
     margin: 0;
