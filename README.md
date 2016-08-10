@@ -86,7 +86,7 @@ Put multiple popovers in your webpage for introducing your website. Then use *da
   <div id="someDiv"></div>
   ...
   <div class="ha-popover" id="mySamplePopover" data-placement="top" data-anchor="#someDiv">
-     <span class="close-btn" data-close="#mySamplePopover">
+     <span class="close-btn" data-closepopover="#mySamplePopover">
      </span>
      <div class="ha-popover-header">
        ...
@@ -95,14 +95,14 @@ Put multiple popovers in your webpage for introducing your website. Then use *da
        ...
      </div>
      <div class="ha-popover-footer">
-       <button data-next="#myAnotherPopover">Next Tip!</button>
+       <button data-nextpopover="#myAnotherPopover">Next Tip!</button>
      </div>
   </div>
     ...
   <div id="anotherDiv"></div>
   ...
   <div class="ha-popover" id="myAnotherPopover" data-placement="top" data-anchor="#anotherDiv">
-     <span class="close-btn" data-close="#myAnotherPopover">
+     <span class="close-btn" data-closepopover="#myAnotherPopover">
      </span>
      <div class="ha-popover-header">
        ...
