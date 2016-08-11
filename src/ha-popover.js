@@ -28,8 +28,6 @@ HaPopOver.prototype.showPopover = function(delay) {
             if (closeBtn != null) {
                 closeBtn.className = closeBtn.className + " animate";
             }
-
-            //smoothScrollIntoView(targetElem);
         }
     }, delay);
 };
@@ -48,7 +46,6 @@ HaPopOver.prototype.setElementsPosition = function(elems) {
 
     for (var t = 0; t < targetElems.length; t++) {
         var targetElem = targetElems[t];
-        // targetElem.parentElement.style.position = "relative";
         var targetAnchor = targetElem.getAttribute("data-anchor");
         var anchor;
         if (targetAnchor == null) {
@@ -112,7 +109,6 @@ HaPopOver.prototype.setElementsPosition = function(elems) {
                 break;
             case "right":
                 targetElem.style.left = rect.left +
-                    // targetElem.parentElement.getBoundingClientRect().left +
                     anchor.clientWidth +
                     20 +
                     "px";
@@ -150,61 +146,6 @@ HaPopOver.prototype.getTargetElements = function() {
     return targetElems;
 }
 
-//function currentYPosition() {
-//    // Firefox, Chrome, Opera, Safari
-//    if (self.pageYOffset) return self.pageYOffset;
-//    // Internet Explorer 6 - standards mode
-//    if (document.documentElement && document.documentElement.scrollTop)
-//        return document.documentElement.scrollTop;
-//    // Internet Explorer 6, 7 and 8
-//    if (document.body.scrollTop) return document.body.scrollTop;
-//    return 0;
-//}
-
-//function elmYPosition(elm) {
-//    //var elm = document.getElementById(eId);
-//    var y = elm.offsetTop;
-//    var node = elm;
-//    while (node.offsetParent && node.offsetParent != document.body) {
-//        node = node.offsetParent;
-//        y += node.offsetTop;
-//    } return y;
-//}
-
-//function smoothScrollIntoView(elm) {
-//    var startY = currentYPosition();
-//    var stopY = elmYPosition(elm);
-//    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
-//    if (startY + h > stopY + elm.clientHeight && startY < stopY)
-//        return;
-//    stopY = stopY - h / 4;
-//    var distance = stopY > startY ? stopY - startY : startY - stopY;
-//    if (distance < 100) {
-//        scrollTo(0, stopY); return;
-//    }
-//    var speed = Math.round(distance / 200);
-//    if (speed >= 20) speed = 20;
-//    var step = Math.round(distance / 250);
-//    var leapY = stopY > startY ? startY + step : startY - step;
-//    var timer = 0;
-//    if (stopY > startY) {
-//        for (var i = startY; i < stopY; i += step) {
-//            setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
-//            leapY += step; if (leapY > stopY) leapY = stopY; timer++;
-//        } return;
-//    }
-//    for (var l = startY; l > stopY; l -= step) {
-//        setTimeout("window.scrollTo(0, " + leapY + ")", timer * speed);
-//        leapY -= step;
-//        if (leapY < stopY)
-//            leapY = stopY;
-//        timer++;
-//    }
-//}
-
-
-
 HaPopOver.prototype.closePopover = function() {
     var popovers = document.querySelectorAll(this.target);
     for (var c = 0; c < popovers.length; c++) {
@@ -220,7 +161,6 @@ HaPopOver.prototype.closePopover = function() {
 }
 
 HaPopOver.init = function() {
-    //window.onload = function() {
     var btnShowPopovers = document.querySelectorAll("[data-showpopover]");
     for (var b = 0; b < btnShowPopovers.length; b++) {
         btnShowPopovers[b].addEventListener("click",
@@ -236,7 +176,6 @@ HaPopOver.init = function() {
 
     var closeBtns = document.querySelectorAll("[data-closepopover]");
 
-    //setTimeout(function () {
     for (var i = 0; i < closeBtns.length; i++) {
         closeBtns[i].addEventListener("click",
             function() {
@@ -247,12 +186,9 @@ HaPopOver.init = function() {
                 delete popover;
             });
     }
-    //}, 1000);
-    //};
 
     var nextBtns = document.querySelectorAll("[data-nextpopover]");
 
-    //setTimeout(function () {
     for (var n = 0; n < nextBtns.length; n++) {
         nextBtns[n].addEventListener("click",
             function() {
@@ -277,18 +213,6 @@ HaPopOver.init = function() {
         delete popover;
     }
 
-    //autoShows.forEach(function (element, index, array) {
-    //    var delay = 0;
-    //    var ad = element.getAttribute("data-autoshowdelay");
-    //    if (ad != null && ad > 0) {
-    //        delay = ad;
-    //    }
-    //    var popover = new HaPopOver(element);
-
-    //    setTimeout(function () {
-    //        popover.showPopover();
-    //    }, delay);
-    //});
 }
 
 HaPopOver.init();
