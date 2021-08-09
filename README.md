@@ -59,7 +59,7 @@ Just download the files and and include JS and CSS files in your HTML webpage
 
   - Close using HTML attribute:
   ```
-  <button data-closepopver="#mySamplePopover">Hide Popover</button>
+  <button data-closepopover="#mySamplePopover">Hide Popover</button>
   ```
   - Close using JavaScript:
   ```javascript
